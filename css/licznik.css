@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  background: #f0f0f0;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+#counter-box{
+  padding: 60px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  background: radial-gradient(circle, #ede7e2, #daccbd);
+}
+#counter-box .counter-number{
+  width: 112px;
+  height: 87px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  position: relative;
+}
+#counter-box .counter-number:before{
+  content: '';
+  position: absolute;
+  background-image: url("../img/counter.png");
+  width: 112px;
+  height: 87px;
+}
+#counter-box .counter-number:after{
+  content: '';
+  position: absolute;
+  background-image: url("../img/line.png");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 13px;
+  margin: 0 auto;
+  z-index: 2;
+}
+#counter-box .counter-number span{
+  color: #f0f0f0;
+  font-weight: 700;
+  z-index: 1;
+}
+#counter-box .number-name{
+  font-weight: 700;
+  text-transform: lowercase;
+  font-size: 1.4rem;
+}
+#control{
+  text-transform: uppercase;
+  font-weight: 700;
+}
